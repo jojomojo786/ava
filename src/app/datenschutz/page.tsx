@@ -38,18 +38,16 @@ export default function DatenschutzPage() {
               Verantwortlich für die Datenverarbeitung auf dieser Website:
             </p>
             <p className="mt-2">
-              [Vollständiger Vor- und Nachname]
+              <span className="bg-gold/10 text-warm-600 px-1 rounded text-xs">wird ergänzt</span>
               <br />
               Premium Reinigungsservice
               <br />
-              [Straße und Hausnummer]
-              <br />
-              [PLZ] Hannover
+              Hannover
               <br />
               <br />
-              Telefon: [0176 638 184 41]
+              Telefon: 0176 638 184 41
               <br />
-              E-Mail: [info@premium-reinigung.de]
+              E-Mail: info@premium-reinigung.de
             </p>
           </div>
 

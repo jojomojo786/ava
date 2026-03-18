@@ -20,22 +20,22 @@ export default function ImpressumPage() {
               Angaben gemäß § 5 TMG
             </h2>
             <p>
-              [Vollständiger Vor- und Nachname]
+              <span className="bg-gold/10 text-warm-600 px-1 rounded text-xs">wird ergänzt</span>
               <br />
               Premium Reinigungsservice
               <br />
-              [Straße und Hausnummer]
+              <span className="bg-gold/10 text-warm-600 px-1 rounded text-xs">Adresse wird ergänzt</span>
               <br />
-              [PLZ] Hannover
+              Hannover
             </p>
           </div>
 
           <div>
             <h2 className="text-lg font-semibold text-navy mb-3">Kontakt</h2>
             <p>
-              Telefon: [0176 638 184 41]
+              Telefon: 0176 638 184 41
               <br />
-              E-Mail: [info@premium-reinigung.de]
+              E-Mail: info@premium-reinigung.de
             </p>
           </div>
 
@@ -58,11 +58,11 @@ export default function ImpressumPage() {
               Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
             </h2>
             <p>
-              [Vollständiger Vor- und Nachname]
+              <span className="bg-gold/10 text-warm-600 px-1 rounded text-xs">wird ergänzt</span>
               <br />
-              [Straße und Hausnummer]
+              Premium Reinigungsservice
               <br />
-              [PLZ] Hannover
+              Hannover
             </p>
           </div>
 
