@@ -114,10 +114,8 @@ export default function AirbnbReinigungPage() {
             <Link href="/#leistungen" className="text-sm font-medium tracking-wide text-gold/80 uppercase mb-3 hover:text-gold transition-colors inline-block">
               ← Unsere Leistungen
             </Link>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1]">
-              Airbnb &amp;
-              <br />
-              Ferienwohnungsreinigung
+            <h1 className="text-[2rem] sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1]">
+              Airbnb &amp; Ferienwohnungs&shy;reinigung
               <br />
               <span className="text-gold">in Hannover</span>
             </h1>
