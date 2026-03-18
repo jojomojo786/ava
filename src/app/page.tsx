@@ -169,7 +169,7 @@ export default function HomePage() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-warm-500/30 text-warm-300 hover:text-white hover:border-warm-400/50 hover:bg-white/5 px-6 py-6 rounded-sm"
+                className="bg-transparent border-warm-500/30 text-warm-300 hover:text-white hover:border-warm-400/50 hover:bg-white/5 px-6 py-6 rounded-sm"
               >
                 <a href="#leistungen">
                   Unsere Leistungen entdecken
@@ -290,7 +290,7 @@ export default function HomePage() {
             <Button
               asChild
               variant="outline"
-              className="mt-8 border-warm-500/30 text-warm-300 hover:border-gold/50 hover:text-gold hover:bg-transparent rounded-sm px-6"
+              className="mt-8 bg-transparent border-warm-500/30 text-warm-300 hover:border-gold/50 hover:text-gold hover:bg-white/5 rounded-sm px-6"
             >
               <Link href="/ueber-uns">
                 Mehr erfahren
