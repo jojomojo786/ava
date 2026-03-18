@@ -111,9 +111,9 @@ export default function TreppenhausreinigungPage() {
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <div className="gold-line mb-6" />
-            <p className="text-sm font-medium tracking-wide text-gold/80 uppercase mb-3">
-              Unsere Leistungen
-            </p>
+            <Link href="/#leistungen" className="text-sm font-medium tracking-wide text-gold/80 uppercase mb-3 hover:text-gold transition-colors inline-block">
+              ← Unsere Leistungen
+            </Link>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1]">
               Treppenhausreinigung
               <br />

@@ -167,11 +167,14 @@ export default function HomePage() {
               </Button>
               <Button
                 asChild
-                variant="ghost"
+                variant="outline"
                 size="lg"
-                className="text-warm-300 hover:text-white hover:bg-white/5 px-6 py-6 rounded-sm"
+                className="border-warm-500/30 text-warm-300 hover:text-white hover:border-warm-400/50 hover:bg-white/5 px-6 py-6 rounded-sm"
               >
-                <a href="#leistungen">Unsere Leistungen entdecken</a>
+                <a href="#leistungen">
+                  Unsere Leistungen entdecken
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </a>
               </Button>
             </div>
 
