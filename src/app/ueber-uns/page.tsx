@@ -220,11 +220,11 @@ export default function UeberUnsPage() {
               </Link>
             </Button>
             <a
-              href="tel:+49511XXXXXXX"
+              href="tel:+4917663818441"
               className="flex items-center gap-2 text-warm-500 hover:text-navy transition-colors text-sm"
             >
               <Phone className="h-4 w-4" />
-              0511 XXX XXXX
+              0176 638 184 41
             </a>
           </div>
         </div>

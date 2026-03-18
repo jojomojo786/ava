@@ -34,11 +34,11 @@ export function Footer() {
             </div>
             <div className="space-y-3 text-sm">
               <a
-                href="tel:+49511XXXXXXX"
+                href="tel:+4917663818441"
                 className="flex items-center gap-2.5 text-warm-400 hover:text-gold transition-colors"
               >
                 <Phone className="h-4 w-4 shrink-0" />
-                0511 XXX XXXX
+                0176 638 184 41
               </a>
               <a
                 href="mailto:info@premium-reinigung.de"

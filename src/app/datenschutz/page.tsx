@@ -47,7 +47,7 @@ export default function DatenschutzPage() {
               [PLZ] Hannover
               <br />
               <br />
-              Telefon: [0511 XXX XXXX]
+              Telefon: [0176 638 184 41]
               <br />
               E-Mail: [info@premium-reinigung.de]
             </p>

@@ -33,7 +33,7 @@ export default function ImpressumPage() {
           <div>
             <h2 className="text-lg font-semibold text-navy mb-3">Kontakt</h2>
             <p>
-              Telefon: [0511 XXX XXXX]
+              Telefon: [0176 638 184 41]
               <br />
               E-Mail: [info@premium-reinigung.de]
             </p>

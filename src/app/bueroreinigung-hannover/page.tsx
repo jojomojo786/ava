@@ -131,11 +131,11 @@ export default function BueroreinigungPage() {
                 </Link>
               </Button>
               <a
-                href="tel:+49511XXXXXXX"
+                href="tel:+4917663818441"
                 className="flex items-center gap-2 text-warm-300 hover:text-gold transition-colors text-sm py-3"
               >
                 <Phone className="h-4 w-4" />
-                oder rufen Sie an: 0511 XXX XXXX
+                oder rufen Sie an: 0176 638 184 41
               </a>
             </div>
 
@@ -334,11 +334,11 @@ export default function BueroreinigungPage() {
               </Link>
             </Button>
             <a
-              href="tel:+49511XXXXXXX"
+              href="tel:+4917663818441"
               className="flex items-center gap-2 text-warm-300 hover:text-gold transition-colors text-sm"
             >
               <Phone className="h-4 w-4" />
-              oder rufen Sie an: 0511 XXX XXXX
+              oder rufen Sie an: 0176 638 184 41
             </a>
           </div>
         </div>

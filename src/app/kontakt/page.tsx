@@ -208,13 +208,13 @@ export default function KontaktPage() {
                     Direkt erreichen
                   </h3>
                   <div className="space-y-5">
-                    <a href="tel:+49511XXXXXXX" className="flex items-center gap-3 group">
+                    <a href="tel:+4917663818441" className="flex items-center gap-3 group">
                       <div className="flex h-11 w-11 items-center justify-center rounded-sm bg-navy/[0.06] group-hover:bg-gold/10 transition-colors">
                         <Phone className="h-5 w-5 text-navy/60 group-hover:text-gold transition-colors" />
                       </div>
                       <div>
                         <div className="text-sm font-medium text-navy">Telefon</div>
-                        <div className="text-sm text-warm-500">0511 XXX XXXX</div>
+                        <div className="text-sm text-warm-500">0176 638 184 41</div>
                       </div>
                     </a>
                     <a href="mailto:info@premium-reinigung.de" className="flex items-center gap-3 group">
