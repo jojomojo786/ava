@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schriftvergleich — AvA Reinigungsservice</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #1a2332;
+      --navy-light: #243044;
+      --gold: #c9a84c;
+      --gold-light: #d4ba6a;
+      --white: #ffffff;
+      --warm-50: #faf9f7;
+      --warm-100: #f3f1ec;
+      --warm-500: #7a7366;
+      --warm-600: #5c564c;
+      --warm-700: #3d3832;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--warm-50);
+      color: var(--warm-700);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page-header {
+      background: linear-gradient(135deg, var(--navy), var(--navy-light));
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
+    }
+
+    .page-header .gold-line {
+      width: 48px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light));
+      margin: 0 auto 20px;
+    }
+
+    .page-header p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      color: rgba(255,255,255,0.55);
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 24px 16px 64px;
+    }
+
+    .font-section {
+      margin-bottom: 28px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(26,35,50,0.06), 0 4px 16px rgba(26,35,50,0.04);
+    }
+
+    .font-label {
+      background: var(--navy);
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .font-label .name {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: 0.03em;
+    }
+
+    .font-label .tag {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11px;
+      color: rgba(255,255,255,0.35);
+      background: rgba(255,255,255,0.06);
+      padding: 3px 10px;
+      border-radius: 100px;
+      letter-spacing: 0.02em;
+    }
+
+    .font-label .tag.current {
+      color: var(--gold);
+      background: rgba(201,168,76,0.12);
+    }
+
+    .font-label .tag.recommended {
+      color: #4ade80;
+      background: rgba(74,222,128,0.1);
+    }
+
+    .font-card {
+      background: var(--white);
+      padding: 28px 24px;
+    }
+
+    .font-card h2 {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin-bottom: 14px;
+    }
+
+    .font-card h2 .ava {
+      color: var(--gold);
+    }
+
+    .font-card .subtext {
+      font-size: 15px;
+      color: var(--warm-600);
+      line-height: 1.65;
+      margin-bottom: 18px;
+    }
+
+    .font-card .services {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 14px;
+      line-height: 1.8;
+      letter-spacing: 0.01em;
+    }
+
+    .font-card .services .dot {
+      color: var(--gold);
+      margin: 0 6px;
+    }
+
+    .font-card .small-text {
+      font-size: 13px;
+      color: var(--warm-500);
+      line-height: 1.6;
+      padding-top: 14px;
+      border-top: 1px solid var(--warm-100);
+    }
+
+    /* Font families for each section */
+    .font-geist .font-card { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; }
+    .font-dm .font-card { font-family: 'DM Sans', sans-serif; }
+    .font-jakarta .font-card { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-outfit .font-card { font-family: 'Outfit', sans-serif; }
+    .font-nunito .font-card { font-family: 'Nunito Sans', sans-serif; }
+
+    /* Staggered fade-in */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .font-section {
+      animation: fadeUp 0.5s ease-out forwards;
+      opacity: 0;
+    }
+    .font-section:nth-child(1) { animation-delay: 0.1s; }
+    .font-section:nth-child(2) { animation-delay: 0.2s; }
+    .font-section:nth-child(3) { animation-delay: 0.3s; }
+    .font-section:nth-child(4) { animation-delay: 0.4s; }
+    .font-section:nth-child(5) { animation-delay: 0.5s; }
+
+    @media (min-width: 640px) {
+      .font-card { padding: 36px 32px; }
+      .font-card h2 { font-size: 34px; }
+      .font-card .subtext { font-size: 16px; }
+      .font-card .services { font-size: 14px; }
+      .font-card .small-text { font-size: 14px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-header">
+    <div class="gold-line"></div>
+    <h1>Schriftvergleich</h1>
+    <p>Tippen Sie durch die Optionen — welche Schrift passt am besten zu AvA?</p>
+  </div>
+
+  <div class="container">
+
+    <!-- 1. Current: Geist Sans (system-ui fallback) -->
+    <div class="font-section font-geist">
+      <div class="font-label">
+        <span class="name">Geist Sans</span>
+        <span class="tag current">Aktuell</span>
+      </div>
+      <div class="font-card">
+        <h2><span class="ava">AvA</span> Reinigungsservice in Hannover</h2>
+        <p class="subtext">Zuverlässige und gründliche Reinigung für Privat- und Geschäftskunden. Wir sorgen für Sauberkeit, auf die Sie sich verlassen können — flexibel, pünktlich und mit höchstem Anspruch an Qualität.</p>
+        <p class="services">Büroreinigung <span class="dot">·</span> Treppenhausreinigung <span class="dot">·</span> Haushaltsreinigung <span class="dot">·</span> Praxisreinigung</p>
+        <p class="small-text">Keine versteckten Kosten. Alle Reinigungsmittel und Geräte im Preis enthalten.</p>
+      </div>
+    </div>
+
+    <!-- 2. DM Sans -->
+    <div class="font-section font-dm">
+      <div class="font-label">
+        <span class="name">DM Sans</span>
+        <span class="tag recommended">Empfohlen</span>
+      </div>
+      <div class="font-card">
+        <h2><span class="ava">AvA</span> Reinigungsservice in Hannover</h2>
+        <p class="subtext">Zuverlässige und gründliche Reinigung für Privat- und Geschäftskunden. Wir sorgen für Sauberkeit, auf die Sie sich verlassen können — flexibel, pünktlich und mit höchstem Anspruch an Qualität.</p>
+        <p class="services">Büroreinigung <span class="dot">·</span> Treppenhausreinigung <span class="dot">·</span> Haushaltsreinigung <span class="dot">·</span> Praxisreinigung</p>
+        <p class="small-text">Keine versteckten Kosten. Alle Reinigungsmittel und Geräte im Preis enthalten.</p>
+      </div>
+    </div>
+
+    <!-- 3. Plus Jakarta Sans -->
+    <div class="font-section font-jakarta">
+      <div class="font-label">
+        <span class="name">Plus Jakarta Sans</span>
+        <span class="tag">Option</span>
+      </div>
+      <div class="font-card">
+        <h2><span class="ava">AvA</span> Reinigungsservice in Hannover</h2>
+        <p class="subtext">Zuverlässige und gründliche Reinigung für Privat- und Geschäftskunden. Wir sorgen für Sauberkeit, auf die Sie sich verlassen können — flexibel, pünktlich und mit höchstem Anspruch an Qualität.</p>
+        <p class="services">Büroreinigung <span class="dot">·</span> Treppenhausreinigung <span class="dot">·</span> Haushaltsreinigung <span class="dot">·</span> Praxisreinigung</p>
+        <p class="small-text">Keine versteckten Kosten. Alle Reinigungsmittel und Geräte im Preis enthalten.</p>
+      </div>
+    </div>
+
+    <!-- 4. Outfit -->
+    <div class="font-section font-outfit">
+      <div class="font-label">
+        <span class="name">Outfit</span>
+        <span class="tag">Option</span>
+      </div>
+      <div class="font-card">
+        <h2><span class="ava">AvA</span> Reinigungsservice in Hannover</h2>
+        <p class="subtext">Zuverlässige und gründliche Reinigung für Privat- und Geschäftskunden. Wir sorgen für Sauberkeit, auf die Sie sich verlassen können — flexibel, pünktlich und mit höchstem Anspruch an Qualität.</p>
+        <p class="services">Büroreinigung <span class="dot">·</span> Treppenhausreinigung <span class="dot">·</span> Haushaltsreinigung <span class="dot">·</span> Praxisreinigung</p>
+        <p class="small-text">Keine versteckten Kosten. Alle Reinigungsmittel und Geräte im Preis enthalten.</p>
+      </div>
+    </div>
+
+    <!-- 5. Nunito Sans -->
+    <div class="font-section font-nunito">
+      <div class="font-label">
+        <span class="name">Nunito Sans</span>
+        <span class="tag">Option</span>
+      </div>
+      <div class="font-card">
+        <h2><span class="ava">AvA</span> Reinigungsservice in Hannover</h2>
+        <p class="subtext">Zuverlässige und gründliche Reinigung für Privat- und Geschäftskunden. Wir sorgen für Sauberkeit, auf die Sie sich verlassen können — flexibel, pünktlich und mit höchstem Anspruch an Qualität.</p>
+        <p class="services">Büroreinigung <span class="dot">·</span> Treppenhausreinigung <span class="dot">·</span> Haushaltsreinigung <span class="dot">·</span> Praxisreinigung</p>
+        <p class="small-text">Keine versteckten Kosten. Alle Reinigungsmittel und Geräte im Preis enthalten.</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
