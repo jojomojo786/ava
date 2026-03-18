@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -33,7 +33,6 @@ const services = [
   { name: "Airbnb & Ferienwohnung", href: "/airbnb-reinigung-hannover", icon: BedDouble },
 ];
 
-// Pages with dark navy hero backgrounds
 const darkHeroPages = [
   "/",
   "/bueroreinigung-hannover",
@@ -54,10 +53,11 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [mobileVisible, setMobileVisible] = useState(false);
   const pathname = usePathname();
+  const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const isDarkHero = darkHeroPages.includes(pathname);
-  // Show light (white text) when on dark hero AND not scrolled
   const isLight = isDarkHero && !scrolled;
 
   useEffect(() => {
@@ -70,6 +70,33 @@ export function Navbar() {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
   }, [mobileOpen]);
+
+  // Close mobile menu on route change
+  useEffect(() => {
+    closeMobileMenu();
+  }, [pathname]);
+
+  const openMobileMenu = () => {
+    setMobileOpen(true);
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => setMobileVisible(true));
+    });
+  };
+
+  const closeMobileMenu = () => {
+    setMobileVisible(false);
+    setTimeout(() => setMobileOpen(false), 300);
+  };
+
+  // Dropdown with delay to prevent gap issue
+  const openDropdown = () => {
+    if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
+    setServicesOpen(true);
+  };
+
+  const closeDropdown = () => {
+    closeTimeoutRef.current = setTimeout(() => setServicesOpen(false), 150);
+  };
 
   return (
     <header
@@ -85,7 +112,7 @@ export function Navbar() {
         <div className="flex h-16 items-center justify-between lg:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className={`flex h-9 w-9 items-center justify-center rounded-sm font-bold text-sm tracking-tight ${
+            <div className={`flex h-9 w-9 items-center justify-center rounded-sm font-bold text-sm tracking-tight transition-colors ${
               isLight ? "bg-white/10 text-gold border border-gold/30" : "bg-navy text-gold"
             }`}>
               PR
@@ -109,24 +136,20 @@ export function Navbar() {
             <Link
               href="/"
               className={`px-3 py-2 text-sm font-medium transition-colors ${
-                isLight
-                  ? "text-warm-300 hover:text-white"
-                  : "text-warm-700 hover:text-navy"
+                isLight ? "text-warm-300 hover:text-white" : "text-warm-700 hover:text-navy"
               }`}
             >
               Startseite
             </Link>
 
-            {/* Leistungen Dropdown */}
+            {/* Leistungen Dropdown — with close delay to bridge gap */}
             <div
               className="relative"
-              onMouseEnter={() => setServicesOpen(true)}
-              onMouseLeave={() => setServicesOpen(false)}
+              onMouseEnter={openDropdown}
+              onMouseLeave={closeDropdown}
             >
               <button className={`flex items-center gap-1 px-3 py-2 text-sm font-medium transition-colors ${
-                isLight
-                  ? "text-warm-300 hover:text-white"
-                  : "text-warm-700 hover:text-navy"
+                isLight ? "text-warm-300 hover:text-white" : "text-warm-700 hover:text-navy"
               }`}>
                 Leistungen
                 <ChevronDown
@@ -136,33 +159,37 @@ export function Navbar() {
                 />
               </button>
 
-              {servicesOpen && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2">
-                  <div className="w-72 rounded-lg border border-warm-200 bg-white p-2 shadow-xl shadow-navy/5">
-                    {services.map((service) => {
-                      const Icon = service.icon;
-                      return (
-                        <Link
-                          key={service.href}
-                          href={service.href}
-                          className="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm text-warm-700 hover:bg-warm-50 hover:text-navy transition-colors group"
-                        >
-                          <Icon className="h-4 w-4 text-warm-400 group-hover:text-gold transition-colors" />
-                          {service.name}
-                        </Link>
-                      );
-                    })}
-                  </div>
+              <div
+                className={`absolute top-full left-1/2 -translate-x-1/2 pt-1 transition-all duration-200 ${
+                  servicesOpen
+                    ? "opacity-100 translate-y-0 pointer-events-auto"
+                    : "opacity-0 -translate-y-1 pointer-events-none"
+                }`}
+              >
+                {/* Invisible bridge to prevent gap hover loss */}
+                <div className="h-2" />
+                <div className="w-72 rounded-lg border border-warm-200 bg-white p-2 shadow-xl shadow-navy/5">
+                  {services.map((service) => {
+                    const Icon = service.icon;
+                    return (
+                      <Link
+                        key={service.href}
+                        href={service.href}
+                        className="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm text-warm-700 hover:bg-warm-50 hover:text-navy transition-colors group"
+                      >
+                        <Icon className="h-4 w-4 text-warm-400 group-hover:text-gold transition-colors" />
+                        {service.name}
+                      </Link>
+                    );
+                  })}
                 </div>
-              )}
+              </div>
             </div>
 
             <Link
               href="/preise"
               className={`px-3 py-2 text-sm font-medium transition-colors ${
-                isLight
-                  ? "text-warm-300 hover:text-white"
-                  : "text-warm-700 hover:text-navy"
+                isLight ? "text-warm-300 hover:text-white" : "text-warm-700 hover:text-navy"
               }`}
             >
               Preise
@@ -170,9 +197,7 @@ export function Navbar() {
             <Link
               href="/ueber-uns"
               className={`px-3 py-2 text-sm font-medium transition-colors ${
-                isLight
-                  ? "text-warm-300 hover:text-white"
-                  : "text-warm-700 hover:text-navy"
+                isLight ? "text-warm-300 hover:text-white" : "text-warm-700 hover:text-navy"
               }`}
             >
               Über Uns
@@ -180,9 +205,7 @@ export function Navbar() {
             <Link
               href="/kontakt"
               className={`px-3 py-2 text-sm font-medium transition-colors ${
-                isLight
-                  ? "text-warm-300 hover:text-white"
-                  : "text-warm-700 hover:text-navy"
+                isLight ? "text-warm-300 hover:text-white" : "text-warm-700 hover:text-navy"
               }`}
             >
               Kontakt
@@ -194,9 +217,7 @@ export function Navbar() {
             <a
               href="tel:+4917663818441"
               className={`flex items-center gap-1.5 text-sm transition-colors ${
-                isLight
-                  ? "text-warm-400 hover:text-gold"
-                  : "text-warm-500 hover:text-navy"
+                isLight ? "text-warm-400 hover:text-gold" : "text-warm-500 hover:text-navy"
               }`}
             >
               <Phone className="h-3.5 w-3.5" />
@@ -220,10 +241,8 @@ export function Navbar() {
               <Link href="/kontakt">Angebot</Link>
             </Button>
             <button
-              onClick={() => setMobileOpen(!mobileOpen)}
-              className={`p-2 transition-colors ${
-                isLight ? "text-white" : "text-navy"
-              }`}
+              onClick={() => mobileOpen ? closeMobileMenu() : openMobileMenu()}
+              className={`p-2 transition-colors ${isLight ? "text-white" : "text-navy"}`}
               aria-label={mobileOpen ? "Menü schließen" : "Menü öffnen"}
             >
               {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -232,14 +251,18 @@ export function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile Slide-over */}
+      {/* Mobile Slide-over with animation */}
       {mobileOpen && (
         <>
           <div
-            className="fixed inset-0 z-40 bg-black/30 backdrop-blur-sm lg:hidden"
-            onClick={() => setMobileOpen(false)}
+            className={`fixed inset-0 z-40 bg-black/30 backdrop-blur-sm lg:hidden transition-opacity duration-300 ${
+              mobileVisible ? "opacity-100" : "opacity-0"
+            }`}
+            onClick={closeMobileMenu}
           />
-          <div className="fixed inset-y-0 right-0 z-50 w-[280px] sm:w-80 bg-white shadow-2xl lg:hidden overflow-y-auto">
+          <div className={`fixed inset-y-0 right-0 z-50 w-[280px] sm:w-80 bg-white shadow-2xl lg:hidden overflow-y-auto transition-transform duration-300 ease-out ${
+            mobileVisible ? "translate-x-0" : "translate-x-full"
+          }`}>
             <div className="flex flex-col h-full">
               <div className="flex items-center justify-between p-5 pb-4">
                 <div>
@@ -251,7 +274,7 @@ export function Navbar() {
                   </span>
                 </div>
                 <button
-                  onClick={() => setMobileOpen(false)}
+                  onClick={closeMobileMenu}
                   className="p-1.5 text-warm-400 hover:text-navy rounded-sm hover:bg-warm-50 transition-colors"
                   aria-label="Menü schließen"
                 >
@@ -262,7 +285,7 @@ export function Navbar() {
               <div className="flex-1 overflow-y-auto p-5 space-y-1">
                 <Link
                   href="/"
-                  onClick={() => setMobileOpen(false)}
+                  onClick={closeMobileMenu}
                   className="block py-2.5 text-sm font-medium text-navy hover:text-gold transition-colors"
                 >
                   Startseite
@@ -278,7 +301,7 @@ export function Navbar() {
                         <Link
                           key={service.href}
                           href={service.href}
-                          onClick={() => setMobileOpen(false)}
+                          onClick={closeMobileMenu}
                           className="flex items-center gap-3 py-2 text-sm text-warm-600 hover:text-navy transition-colors"
                         >
                           <Icon className="h-4 w-4 text-warm-400" />
@@ -291,21 +314,21 @@ export function Navbar() {
                 <Separator className="bg-warm-100 !my-3" />
                 <Link
                   href="/preise"
-                  onClick={() => setMobileOpen(false)}
+                  onClick={closeMobileMenu}
                   className="block py-2.5 text-sm font-medium text-navy hover:text-gold transition-colors"
                 >
                   Preise
                 </Link>
                 <Link
                   href="/ueber-uns"
-                  onClick={() => setMobileOpen(false)}
+                  onClick={closeMobileMenu}
                   className="block py-2.5 text-sm font-medium text-navy hover:text-gold transition-colors"
                 >
                   Über Uns
                 </Link>
                 <Link
                   href="/kontakt"
-                  onClick={() => setMobileOpen(false)}
+                  onClick={closeMobileMenu}
                   className="block py-2.5 text-sm font-medium text-navy hover:text-gold transition-colors"
                 >
                   Kontakt
@@ -323,7 +346,7 @@ export function Navbar() {
                   asChild
                   className="w-full bg-gold hover:bg-gold-dark text-navy font-semibold rounded-sm shadow-none"
                 >
-                  <Link href="/kontakt" onClick={() => setMobileOpen(false)}>
+                  <Link href="/kontakt" onClick={closeMobileMenu}>
                     Kostenloses Angebot anfordern
                   </Link>
                 </Button>
