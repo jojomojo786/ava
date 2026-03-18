@@ -169,11 +169,11 @@ export default function KontaktPage() {
                       id="dsgvo"
                       name="dsgvo"
                       required
-                      className="mt-0.5 rounded-sm border-warm-300 data-[state=checked]:bg-gold data-[state=checked]:border-gold"
+                      className="mt-1 shrink-0 rounded-sm border-warm-300 data-[state=checked]:bg-gold data-[state=checked]:border-gold"
                     />
-                    <Label
+                    <label
                       htmlFor="dsgvo"
-                      className="text-sm text-warm-500 leading-relaxed font-normal cursor-pointer"
+                      className="text-sm text-warm-500 leading-relaxed cursor-pointer"
                     >
                       Ich habe die{" "}
                       <Link
@@ -185,7 +185,7 @@ export default function KontaktPage() {
                       gelesen und stimme der Verarbeitung meiner Daten zur
                       Bearbeitung meiner Anfrage zu.{" "}
                       <span className="text-gold">*</span>
-                    </Label>
+                    </label>
                   </div>
 
                   <Button
