@@ -165,17 +165,13 @@ export default function HomePage() {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="bg-transparent border-warm-500/30 text-warm-300 hover:text-white hover:border-warm-400/50 hover:bg-white/5 px-6 py-6 rounded-sm"
+              <a
+                href="#leistungen"
+                className="inline-flex items-center gap-2 border border-warm-500/30 text-warm-300 hover:text-white hover:border-warm-400/50 hover:bg-white/5 px-6 py-3 rounded-sm text-sm font-medium transition-colors"
               >
-                <a href="#leistungen">
-                  Unsere Leistungen entdecken
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
-              </Button>
+                Unsere Leistungen entdecken
+                <ArrowRight className="h-4 w-4" />
+              </a>
             </div>
 
             {/* Trust indicators */}
@@ -287,16 +283,13 @@ export default function HomePage() {
             <div className="mt-4 text-warm-400 text-sm">
               Für Privat- und Geschäftskunden in Hannover und Umgebung.
             </div>
-            <Button
-              asChild
-              variant="outline"
-              className="mt-8 bg-transparent border-warm-500/30 text-warm-300 hover:border-gold/50 hover:text-gold hover:bg-white/5 rounded-sm px-6"
+            <Link
+              href="/ueber-uns"
+              className="mt-8 inline-flex items-center gap-2 border border-warm-500/30 text-warm-300 hover:border-gold/50 hover:text-gold hover:bg-white/5 rounded-sm px-6 py-2.5 text-sm font-medium transition-colors"
             >
-              <Link href="/ueber-uns">
-                Mehr erfahren
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
+              Mehr erfahren
+              <ArrowRight className="h-4 w-4" />
+            </Link>
           </div>
         </div>
       </section>
