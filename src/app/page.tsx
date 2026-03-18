@@ -154,11 +154,11 @@ export default function HomePage() {
               Qualität.
             </p>
 
-            <div className="mt-10 flex flex-col sm:flex-row items-start gap-4 animate-fade-in-up stagger-3">
+            <div className="mt-10 flex flex-col sm:flex-row items-stretch sm:items-start gap-4 animate-fade-in-up stagger-3">
               <Button
                 asChild
                 size="lg"
-                className="bg-gold hover:bg-gold-dark text-navy font-semibold text-base px-8 py-6 rounded-sm shadow-lg shadow-gold/20 transition-all hover:shadow-xl hover:shadow-gold/30"
+                className="w-full sm:w-auto bg-gold hover:bg-gold-dark text-navy font-semibold text-base px-8 py-6 rounded-sm shadow-lg shadow-gold/20 transition-all hover:shadow-xl hover:shadow-gold/30"
               >
                 <a href="#kontakt">
                   Jetzt kostenloses Angebot anfordern
@@ -167,7 +167,7 @@ export default function HomePage() {
               </Button>
               <a
                 href="#leistungen"
-                className="inline-flex items-center gap-2 bg-white text-navy hover:bg-warm-100 px-6 py-3 rounded-sm text-sm font-medium transition-colors"
+                className="flex items-center justify-center gap-2 bg-white text-navy hover:bg-warm-100 px-6 py-3 rounded-sm text-sm font-medium transition-colors sm:w-auto"
               >
                 Unsere Leistungen entdecken
                 <ArrowRight className="h-4 w-4" />
