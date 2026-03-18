@@ -140,11 +140,11 @@ export default function HomePage() {
             <div className="gold-line mb-8 animate-fade-in-up" />
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white leading-[1.08] animate-fade-in-up stagger-1">
-              Premium
+              <span className="text-gold">AvA</span>
               <br />
               Reinigungsservice
               <br />
-              <span className="text-gold">in Hannover</span>
+              in Hannover
             </h1>
 
             <p className="mt-6 lg:mt-8 text-lg lg:text-xl text-warm-300 leading-relaxed max-w-2xl animate-fade-in-up stagger-2">
@@ -243,7 +243,7 @@ export default function HomePage() {
           <div className="text-center mb-14">
             <div className="gold-line mx-auto mb-4" />
             <h2 className="text-3xl lg:text-4xl font-bold text-navy tracking-tight">
-              Warum Premium Reinigungsservice?
+              Warum AvA Reinigungsservice?
             </h2>
           </div>
 
@@ -275,7 +275,7 @@ export default function HomePage() {
               Über Uns
             </h2>
             <p className="mt-6 text-lg text-warm-300 leading-relaxed">
-              Premium Reinigungsservice steht für Qualität, Zuverlässigkeit und
+              AvA Reinigungsservice steht für Qualität, Zuverlässigkeit und
               sorgfältige Arbeit. Unser Ziel ist es, unseren Kunden ein sauberes,
               gepflegtes und angenehmes Umfeld zu bieten — damit Sie sich auf das
               Wesentliche konzentrieren können.
@@ -489,7 +489,7 @@ export default function HomePage() {
                       </div>
                     </a>
                     <a
-                      href="mailto:info@premium-reinigung.de"
+                      href="mailto:info@ava-reinigung.de"
                       className="flex items-center gap-3 group"
                     >
                       <div className="flex h-10 w-10 items-center justify-center rounded-sm bg-navy/[0.06] group-hover:bg-gold/10 transition-colors">
@@ -500,7 +500,7 @@ export default function HomePage() {
                           E-Mail
                         </div>
                         <div className="text-sm text-warm-500">
-                          info@premium-reinigung.de
+                          info@ava-reinigung.de
                         </div>
                       </div>
                     </a>
@@ -563,7 +563,7 @@ export default function HomePage() {
       <section className="py-16 bg-navy">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl lg:text-3xl font-bold text-white tracking-tight">
-            Bereit für Premium-Sauberkeit?
+            Bereit für AvA-Sauberkeit?
           </h2>
           <p className="mt-3 text-warm-400">
             Lassen Sie sich jetzt unverbindlich beraten.

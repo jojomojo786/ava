@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Impressum | Premium Reinigungsservice Hannover",
-  description: "Impressum gemäß § 5 TMG — Premium Reinigungsservice Hannover.",
+  title: "Impressum | AvA Reinigungsservice Hannover",
+  description: "Impressum gemäß § 5 TMG — AvA Reinigungsservice Hannover.",
 };
 
 export default function ImpressumPage() {
@@ -22,7 +22,7 @@ export default function ImpressumPage() {
             <p>
               <span className="bg-gold/10 text-warm-600 px-1 rounded text-xs">wird ergänzt</span>
               <br />
-              Premium Reinigungsservice
+              AvA Reinigungsservice
               <br />
               <span className="bg-gold/10 text-warm-600 px-1 rounded text-xs">Adresse wird ergänzt</span>
               <br />
@@ -35,7 +35,7 @@ export default function ImpressumPage() {
             <p>
               Telefon: 0176 638 184 41
               <br />
-              E-Mail: info@premium-reinigung.de
+              E-Mail: info@ava-reinigung.de
             </p>
           </div>
 
@@ -60,7 +60,7 @@ export default function ImpressumPage() {
             <p>
               <span className="bg-gold/10 text-warm-600 px-1 rounded text-xs">wird ergänzt</span>
               <br />
-              Premium Reinigungsservice
+              AvA Reinigungsservice
               <br />
               Hannover
             </p>

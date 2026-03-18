@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Datenschutzerklärung | Premium Reinigungsservice Hannover",
-  description: "Datenschutzerklärung gemäß DSGVO — Premium Reinigungsservice Hannover.",
+  title: "Datenschutzerklärung | AvA Reinigungsservice Hannover",
+  description: "Datenschutzerklärung gemäß DSGVO — AvA Reinigungsservice Hannover.",
 };
 
 export default function DatenschutzPage() {
@@ -40,14 +40,14 @@ export default function DatenschutzPage() {
             <p className="mt-2">
               <span className="bg-gold/10 text-warm-600 px-1 rounded text-xs">wird ergänzt</span>
               <br />
-              Premium Reinigungsservice
+              AvA Reinigungsservice
               <br />
               Hannover
               <br />
               <br />
               Telefon: 0176 638 184 41
               <br />
-              E-Mail: info@premium-reinigung.de
+              E-Mail: info@ava-reinigung.de
             </p>
           </div>
 

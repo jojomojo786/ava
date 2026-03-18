@@ -10,7 +10,7 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Premium Reinigungsservice in Hannover | Professionelle Gebäudereinigung",
+  title: "AvA Reinigungsservice in Hannover | Professionelle Gebäudereinigung",
   description:
     "Zuverlässige und gründliche Reinigung für Privat- und Geschäftskunden in Hannover. Büroreinigung, Treppenhausreinigung, Praxisreinigung und mehr. Jetzt kostenloses Angebot anfordern.",
   keywords: [
@@ -20,10 +20,10 @@ export const metadata: Metadata = {
     "Treppenhausreinigung Hannover",
     "Praxisreinigung Hannover",
     "Haushaltsreinigung Hannover",
-    "Premium Reinigung",
+    "AvA Reinigung",
   ],
   openGraph: {
-    title: "Premium Reinigungsservice in Hannover",
+    title: "AvA Reinigungsservice in Hannover",
     description:
       "Zuverlässige und gründliche Reinigung für Privat- und Geschäftskunden. Flexibel, pünktlich und mit höchstem Anspruch an Qualität.",
     locale: "de_DE",

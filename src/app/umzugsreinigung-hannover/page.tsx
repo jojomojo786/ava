@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Umzugsreinigung Hannover | Mit Abnahmegarantie | Premium Reinigungsservice",
+  title: "Umzugsreinigung Hannover | Mit Abnahmegarantie | AvA Reinigungsservice",
   description:
     "Professionelle Umzugsreinigung in Hannover mit Abnahmegarantie. 1-Zimmer ab €159, 2-Zimmer ab €189, 3-Zimmer ab €229. Kurzfristig verfügbar, alle Mittel inkl. Jetzt Angebot anfordern.",
 };

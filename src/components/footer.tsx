@@ -26,7 +26,7 @@ export function Footer() {
           <div>
             <div className="mb-6">
               <span className="text-sm font-semibold tracking-wide text-white uppercase">
-                Premium
+                AvA
               </span>
               <span className="block text-[10px] font-medium tracking-[0.2em] text-gold uppercase">
                 Reinigungsservice
@@ -41,11 +41,11 @@ export function Footer() {
                 0176 638 184 41
               </a>
               <a
-                href="mailto:info@premium-reinigung.de"
+                href="mailto:info@ava-reinigung.de"
                 className="flex items-center gap-2.5 text-warm-400 hover:text-gold transition-colors"
               >
                 <Mail className="h-4 w-4 shrink-0" />
-                info@premium-reinigung.de
+                info@ava-reinigung.de
               </a>
               <div className="flex items-start gap-2.5 text-warm-400">
                 <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
@@ -141,7 +141,7 @@ export function Footer() {
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-warm-500">
-          <span>&copy; {new Date().getFullYear()} Premium Reinigungsservice Hannover</span>
+          <span>&copy; {new Date().getFullYear()} AvA Reinigungsservice Hannover</span>
           <span>Alle Rechte vorbehalten.</span>
         </div>
       </div>

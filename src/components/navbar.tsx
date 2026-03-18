@@ -80,7 +80,7 @@ function MobileMenu({
           <div className="flex items-center justify-between p-5 pb-4">
             <div>
               <span className="text-sm font-semibold tracking-wide text-navy uppercase">
-                Premium
+                AvA
               </span>
               <span className="block text-[10px] font-medium tracking-[0.2em] text-warm-500 uppercase">
                 Reinigungsservice
@@ -236,13 +236,13 @@ export function Navbar() {
               <div className={`flex h-9 w-9 items-center justify-center rounded-sm font-bold text-sm tracking-tight transition-colors ${
                 isLight ? "bg-white/10 text-gold border border-gold/30" : "bg-navy text-gold"
               }`}>
-                PR
+                AvA
               </div>
               <div className="hidden sm:block">
                 <span className={`text-sm font-semibold tracking-wide uppercase transition-colors ${
                   isLight ? "text-white" : "text-navy"
                 }`}>
-                  Premium
+                  AvA
                 </span>
                 <span className={`block text-[10px] font-medium tracking-[0.2em] uppercase -mt-0.5 transition-colors ${
                   isLight ? "text-warm-400" : "text-warm-500"

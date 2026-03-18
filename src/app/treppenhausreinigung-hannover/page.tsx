@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Treppenhausreinigung Hannover | Premium Reinigungsservice",
+  title: "Treppenhausreinigung Hannover | AvA Reinigungsservice",
   description:
     "Professionelle Treppenhausreinigung in Hannover — gepflegte Treppenhäuser für zufriedene Mieter. Pauschalpreise, flexible Frequenz (wöchentlich bis monatlich). Jetzt kostenloses Angebot anfordern.",
 };

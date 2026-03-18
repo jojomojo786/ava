@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Premium Reinigungsservice Hannover";
+export const alt = "AvA Reinigungsservice Hannover";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -37,7 +37,7 @@ export default async function Image() {
             letterSpacing: "-0.02em",
           }}
         >
-          Premium
+          AvA
         </div>
         <div
           style={{
@@ -95,10 +95,10 @@ export default async function Image() {
               fontWeight: 700,
             }}
           >
-            PR
+            AvA
           </div>
           <div style={{ color: "#7a7366", fontSize: 16 }}>
-            premium-reinigungsservice.de
+            ava-reinigung.de
           </div>
         </div>
       </div>
