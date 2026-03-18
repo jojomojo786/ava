@@ -167,7 +167,7 @@ export default function HomePage() {
               </Button>
               <a
                 href="#leistungen"
-                className="inline-flex items-center gap-2 border border-warm-500/30 text-warm-300 hover:text-white hover:border-warm-400/50 hover:bg-white/5 px-6 py-3 rounded-sm text-sm font-medium transition-colors"
+                className="inline-flex items-center gap-2 bg-white text-navy hover:bg-warm-100 px-6 py-3 rounded-sm text-sm font-medium transition-colors"
               >
                 Unsere Leistungen entdecken
                 <ArrowRight className="h-4 w-4" />
@@ -285,7 +285,7 @@ export default function HomePage() {
             </div>
             <Link
               href="/ueber-uns"
-              className="mt-8 inline-flex items-center gap-2 border border-warm-500/30 text-warm-300 hover:border-gold/50 hover:text-gold hover:bg-white/5 rounded-sm px-6 py-2.5 text-sm font-medium transition-colors"
+              className="mt-8 inline-flex items-center gap-2 bg-white text-navy hover:bg-warm-100 rounded-sm px-6 py-2.5 text-sm font-medium transition-colors"
             >
               Mehr erfahren
               <ArrowRight className="h-4 w-4" />
