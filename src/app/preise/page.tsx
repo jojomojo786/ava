@@ -179,7 +179,7 @@ export default function PreisePage() {
                   key={service.name}
                   className="p-6 bg-white border-warm-200/60 rounded-sm"
                 >
-                  <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-8">
+                  <div className="flex flex-col lg:flex-row lg:items-center gap-3 lg:gap-8">
                     {/* Service name */}
                     <div className="flex items-center gap-3 lg:w-64 shrink-0">
                       <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-sm bg-gold/10">
@@ -194,13 +194,13 @@ export default function PreisePage() {
                     </div>
 
                     {/* Prices */}
-                    <div className="flex flex-wrap gap-x-8 gap-y-2 flex-1">
+                    <div className="flex flex-wrap gap-x-6 gap-y-1.5 flex-1 pl-0 lg:pl-0">
                       {service.prices.map((price) => (
-                        <div key={price.label} className="flex items-baseline gap-2">
-                          <span className="text-sm text-warm-500">
-                            {price.label}:
+                        <div key={price.label}>
+                          <span className="text-xs text-warm-400 block lg:inline lg:mr-1.5">
+                            {price.label}
                           </span>
-                          <span className="font-semibold text-navy">
+                          <span className="font-semibold text-navy text-sm">
                             {price.value}
                           </span>
                         </div>
@@ -208,7 +208,7 @@ export default function PreisePage() {
                     </div>
 
                     {/* Note */}
-                    <div className="text-xs text-warm-400 lg:w-64 lg:text-right shrink-0">
+                    <div className="text-xs text-warm-400 lg:w-64 lg:text-right shrink-0 border-t border-warm-100 pt-2 lg:border-0 lg:pt-0">
                       {service.note}
                     </div>
                   </div>
