@@ -20,7 +20,7 @@ export default function ImpressumPage() {
               Angaben gemäß § 5 TMG
             </h2>
             <p>
-              <span className="bg-gold/10 text-warm-600 px-1 rounded text-xs">wird ergänzt</span>
+              Ava AbdulRahman
               <br />
               AvA Reinigungsservice
               <br />
@@ -58,7 +58,7 @@ export default function ImpressumPage() {
               Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
             </h2>
             <p>
-              <span className="bg-gold/10 text-warm-600 px-1 rounded text-xs">wird ergänzt</span>
+              Ava AbdulRahman
               <br />
               AvA Reinigungsservice
               <br />
