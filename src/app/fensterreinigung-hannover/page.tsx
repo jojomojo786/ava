@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Fensterreinigung Hannover | AvA Reinigungsservice",
+  title: "Fensterreinigung Hannover | AvA Facility Service",
   description:
     "Professionelle Fensterreinigung in Hannover — streifenfrei garantiert. Glas, Rahmen und Fensterbänke inklusive. Ab €2,50 pro Seite. Jetzt kostenloses Angebot anfordern.",
 };

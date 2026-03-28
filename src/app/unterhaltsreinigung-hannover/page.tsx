@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Unterhaltsreinigung Hannover | AvA Reinigungsservice",
+  title: "Unterhaltsreinigung Hannover | AvA Facility Service",
   description:
     "Regelmäßige Unterhaltsreinigung in Hannover — für den Werterhalt Ihrer Immobilie. Maßgeschneidertes Leistungsverzeichnis, feste Monatspreise, flexible Frequenz. Jetzt kostenloses Angebot anfordern.",
 };

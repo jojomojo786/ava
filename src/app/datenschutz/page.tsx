@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Datenschutzerklärung | AvA Reinigungsservice Hannover",
-  description: "Datenschutzerklärung gemäß DSGVO — AvA Reinigungsservice Hannover.",
+  title: "Datenschutzerklärung | AvA Facility Service Hannover",
+  description: "Datenschutzerklärung gemäß DSGVO — AvA Facility Service Hannover.",
 };
 
 export default function DatenschutzPage() {
@@ -40,7 +40,7 @@ export default function DatenschutzPage() {
             <p className="mt-2">
               <span className="bg-gold/10 text-warm-600 px-1 rounded text-xs">wird ergänzt</span>
               <br />
-              AvA Reinigungsservice
+              AvA Facility Service
               <br />
               Hannover
               <br />

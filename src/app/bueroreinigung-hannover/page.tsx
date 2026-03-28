@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Büroreinigung Hannover | AvA Reinigungsservice",
+  title: "Büroreinigung Hannover | AvA Facility Service",
   description:
     "Professionelle Büroreinigung in Hannover — für ein sauberes Arbeitsumfeld und ein gutes Betriebsklima. Flexible Termine, faire Preise, diskret und termingerecht. Jetzt kostenloses Angebot anfordern.",
 };

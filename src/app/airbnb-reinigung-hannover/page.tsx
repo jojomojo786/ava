@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Airbnb & Ferienwohnungsreinigung Hannover | AvA Reinigungsservice",
+  title: "Airbnb & Ferienwohnungsreinigung Hannover | AvA Facility Service",
   description:
     "Professionelle Airbnb-Reinigung in Hannover — schneller Turnover zwischen Gästen, Bettwäschewechsel, Foto-Dokumentation. Ab €65 für 60m². 24h verfügbar. Jetzt Angebot anfordern.",
 };

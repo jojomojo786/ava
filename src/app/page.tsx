@@ -243,7 +243,7 @@ export default function HomePage() {
           <div className="text-center mb-14">
             <div className="gold-line mx-auto mb-4" />
             <h2 className="text-3xl lg:text-4xl font-bold text-navy tracking-tight">
-              Warum AvA Reinigungsservice?
+              Warum AvA Facility Service?
             </h2>
           </div>
 
@@ -275,7 +275,7 @@ export default function HomePage() {
               Über Uns
             </h2>
             <p className="mt-6 text-lg text-warm-300 leading-relaxed">
-              AvA Reinigungsservice steht für Qualität, Zuverlässigkeit und
+              AvA Facility Service steht für Qualität, Zuverlässigkeit und
               sorgfältige Arbeit. Unser Ziel ist es, unseren Kunden ein sauberes,
               gepflegtes und angenehmes Umfeld zu bieten — damit Sie sich auf das
               Wesentliche konzentrieren können.

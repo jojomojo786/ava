@@ -14,9 +14,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Über Uns | AvA Reinigungsservice Hannover",
+  title: "Über Uns | AvA Facility Service Hannover",
   description:
-    "AvA Reinigungsservice Hannover — Qualität, Zuverlässigkeit und sorgfältige Arbeit. Erfahren Sie mehr über unser Team und unsere Werte. Für Privat- und Geschäftskunden.",
+    "AvA Facility Service Hannover — Qualität, Zuverlässigkeit und sorgfältige Arbeit. Erfahren Sie mehr über unser Team und unsere Werte. Für Privat- und Geschäftskunden.",
 };
 
 const values = [
@@ -69,7 +69,7 @@ export default function UeberUnsPage() {
               <span className="text-gold">Uns</span>
             </h1>
             <p className="mt-6 text-lg lg:text-xl text-warm-300 leading-relaxed max-w-2xl">
-              AvA Reinigungsservice steht für Qualität, Zuverlässigkeit und
+              AvA Facility Service steht für Qualität, Zuverlässigkeit und
               sorgfältige Arbeit. Unser Ziel ist es, unseren Kunden ein sauberes,
               gepflegtes und angenehmes Umfeld zu bieten — damit Sie sich auf das
               Wesentliche konzentrieren können.
