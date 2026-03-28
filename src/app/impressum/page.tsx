@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Impressum | AvA Reinigungsservice Hannover",
-  description: "Impressum gemäß § 5 TMG — AvA Reinigungsservice Hannover.",
+  title: "Impressum | AvA Facility Service Hannover",
+  description: "Impressum gemäß § 5 TMG — AvA Facility Service Hannover.",
 };
 
 export default function ImpressumPage() {
@@ -22,11 +22,11 @@ export default function ImpressumPage() {
             <p>
               Ava AbdulRahman
               <br />
-              AvA Reinigungsservice
+              AvA Facility Service
               <br />
-              <span className="bg-gold/10 text-warm-600 px-1 rounded text-xs">Adresse wird ergänzt</span>
+              Lindemannallee 17
               <br />
-              Hannover
+              30173 Hannover
             </p>
           </div>
 
@@ -35,21 +35,20 @@ export default function ImpressumPage() {
             <p>
               Telefon: 0176 638 184 41
               <br />
-              E-Mail: info@ava-reinigung.de
+              E-Mail: ava.abdulrahman02@gmail.com
             </p>
           </div>
 
           <div>
             <h2 className="text-lg font-semibold text-navy mb-3">
-              Umsatzsteuer-ID
+              Steuernummer
             </h2>
             <p>
+              Steuernummer: 2610120286
+            </p>
+            <p className="mt-2">
               Kleinunternehmer im Sinne von § 19 UStG. Die Umsatzsteuer wird
               nicht ausgewiesen.
-            </p>
-            <p className="mt-2 text-warm-400 text-xs">
-              (Diese Angabe ist anzupassen, sobald die Umsatzsteuer-ID erteilt
-              wird oder die Kleinunternehmerregelung nicht mehr gilt.)
             </p>
           </div>
 
@@ -60,9 +59,11 @@ export default function ImpressumPage() {
             <p>
               Ava AbdulRahman
               <br />
-              AvA Reinigungsservice
+              AvA Facility Service
               <br />
-              Hannover
+              Lindemannallee 17
+              <br />
+              30173 Hannover
             </p>
           </div>
 
