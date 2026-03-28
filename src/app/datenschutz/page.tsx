@@ -47,7 +47,7 @@ export default function DatenschutzPage() {
               <br />
               Telefon: 0176 638 184 41
               <br />
-              E-Mail: info@ava-reinigung.de
+              E-Mail: ava.abdulrahman02@gmail.com
             </p>
           </div>
 

@@ -41,11 +41,11 @@ export function Footer() {
                 0176 638 184 41
               </a>
               <a
-                href="mailto:info@ava-reinigung.de"
+                href="mailto:ava.abdulrahman02@gmail.com"
                 className="flex items-center gap-2.5 text-warm-400 hover:text-gold transition-colors"
               >
                 <Mail className="h-4 w-4 shrink-0" />
-                info@ava-reinigung.de
+                ava.abdulrahman02@gmail.com
               </a>
               <div className="flex items-start gap-2.5 text-warm-400">
                 <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
