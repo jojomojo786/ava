@@ -48,7 +48,7 @@ export default async function Image() {
             letterSpacing: "-0.02em",
           }}
         >
-          Reinigungsservice
+          Facility Service
         </div>
         <div
           style={{

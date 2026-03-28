@@ -142,7 +142,7 @@ export default function HomePage() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white leading-[1.08] animate-fade-in-up stagger-1">
               <span className="text-gold">AvA</span>
               <br />
-              Reinigungsservice
+              Facility Service
               <br />
               in Hannover
             </h1>

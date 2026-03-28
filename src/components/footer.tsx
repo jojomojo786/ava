@@ -29,7 +29,7 @@ export function Footer() {
                 AvA
               </span>
               <span className="block text-[10px] font-medium tracking-[0.2em] text-gold uppercase">
-                Reinigungsservice
+                Facility Service
               </span>
             </div>
             <div className="space-y-3 text-sm">

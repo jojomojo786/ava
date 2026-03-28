@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description:
     "Zuverlässige und gründliche Reinigung für Privat- und Geschäftskunden in Hannover. Büroreinigung, Treppenhausreinigung, Praxisreinigung und mehr. Jetzt kostenloses Angebot anfordern.",
   keywords: [
-    "Reinigungsservice Hannover",
+    "Facility Service Hannover",
     "Gebäudereinigung Hannover",
     "Büroreinigung Hannover",
     "Treppenhausreinigung Hannover",

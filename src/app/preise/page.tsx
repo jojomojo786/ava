@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Preise Reinigungsservice Hannover | Was kostet eine Reinigung?",
+  title: "Preise Facility Service Hannover | Was kostet eine Reinigung?",
   description:
     "Transparente Preise für alle Reinigungsservices in Hannover. Büroreinigung ab €89, Fensterreinigung ab €2,50/Seite, Umzugsreinigung ab €159. Alle Mittel inklusive. Jetzt Angebot anfordern.",
 };
