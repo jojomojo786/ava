@@ -217,13 +217,13 @@ export default function KontaktPage() {
                         <div className="text-sm text-warm-500">0176 638 184 41</div>
                       </div>
                     </a>
-                    <a href="mailto:ava.abdulrahman02@gmail.com" className="flex items-center gap-3 group">
+                    <a href="mailto:info@ava-facilityservices.de" className="flex items-center gap-3 group">
                       <div className="flex h-11 w-11 items-center justify-center rounded-sm bg-navy/[0.06] group-hover:bg-gold/10 transition-colors">
                         <Mail className="h-5 w-5 text-navy/60 group-hover:text-gold transition-colors" />
                       </div>
                       <div>
                         <div className="text-sm font-medium text-navy">E-Mail</div>
-                        <div className="text-sm text-warm-500">ava.abdulrahman02@gmail.com</div>
+                        <div className="text-sm text-warm-500">info@ava-facilityservices.de</div>
                       </div>
                     </a>
                     <div className="flex items-center gap-3">

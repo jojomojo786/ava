@@ -35,7 +35,7 @@ export default function ImpressumPage() {
             <p>
               Telefon: 0176 638 184 41
               <br />
-              E-Mail: ava.abdulrahman02@gmail.com
+              E-Mail: info@ava-facilityservices.de
             </p>
           </div>
 

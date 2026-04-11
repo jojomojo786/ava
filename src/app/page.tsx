@@ -489,7 +489,7 @@ export default function HomePage() {
                       </div>
                     </a>
                     <a
-                      href="mailto:ava.abdulrahman02@gmail.com"
+                      href="mailto:info@ava-facilityservices.de"
                       className="flex items-center gap-3 group"
                     >
                       <div className="flex h-10 w-10 items-center justify-center rounded-sm bg-navy/[0.06] group-hover:bg-gold/10 transition-colors">
@@ -500,7 +500,7 @@ export default function HomePage() {
                           E-Mail
                         </div>
                         <div className="text-sm text-warm-500">
-                          ava.abdulrahman02@gmail.com
+                          info@ava-facilityservices.de
                         </div>
                       </div>
                     </a>
