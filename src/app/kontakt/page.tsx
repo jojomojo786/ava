@@ -237,7 +237,7 @@ export default function KontaktPage() {
                       </div>
                       <div>
                         <div className="text-sm font-medium text-navy">Standort</div>
-                        <div className="text-sm text-warm-500">Lindemannallee 17, 30173 Hannover</div>
+                        <div className="text-sm text-warm-500 underline underline-offset-4 decoration-warm-400/50 group-hover:decoration-gold">Lindemannallee 17, 30173 Hannover</div>
                       </div>
                     </a>
                   </div>

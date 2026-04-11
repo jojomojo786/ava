@@ -187,7 +187,7 @@ export default function UeberUnsPage() {
               className="flex items-center justify-center gap-2 text-gold/80 hover:text-gold transition-colors mb-4"
             >
               <MapPin className="h-5 w-5" />
-              <span className="text-sm font-medium tracking-wide uppercase">
+              <span className="text-sm font-medium tracking-wide uppercase underline underline-offset-4 decoration-gold/40 hover:decoration-gold">
                 Lindemannallee 17, 30173 Hannover
               </span>
             </a>

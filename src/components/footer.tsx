@@ -51,10 +51,10 @@ export function Footer() {
                 href="https://www.google.com/maps/search/?api=1&query=Lindemannallee+17%2C+30173+Hannover"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-start gap-2.5 text-warm-400 hover:text-gold transition-colors"
+                className="group flex items-start gap-2.5 text-warm-400 hover:text-gold transition-colors"
               >
                 <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
-                <span>
+                <span className="underline underline-offset-4 decoration-warm-500/50 group-hover:decoration-gold">
                   Lindemannallee 17
                   <br />
                   30173 Hannover
