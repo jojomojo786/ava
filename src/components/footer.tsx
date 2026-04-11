@@ -47,14 +47,19 @@ export function Footer() {
                 <Mail className="h-4 w-4 shrink-0" />
                 info@ava-facilityservices.de
               </a>
-              <div className="flex items-start gap-2.5 text-warm-400">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Lindemannallee+17%2C+30173+Hannover"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-2.5 text-warm-400 hover:text-gold transition-colors"
+              >
                 <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
                 <span>
-                  Hannover
+                  Lindemannallee 17
                   <br />
-                  und Umgebung
+                  30173 Hannover
                 </span>
-              </div>
+              </a>
             </div>
           </div>
 

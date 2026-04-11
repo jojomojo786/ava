@@ -226,15 +226,20 @@ export default function KontaktPage() {
                         <div className="text-sm text-warm-500">info@ava-facilityservices.de</div>
                       </div>
                     </a>
-                    <div className="flex items-center gap-3">
-                      <div className="flex h-11 w-11 items-center justify-center rounded-sm bg-navy/[0.06]">
-                        <MapPin className="h-5 w-5 text-navy/60" />
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&query=Lindemannallee+17%2C+30173+Hannover"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 group"
+                    >
+                      <div className="flex h-11 w-11 items-center justify-center rounded-sm bg-navy/[0.06] group-hover:bg-gold/10 transition-colors">
+                        <MapPin className="h-5 w-5 text-navy/60 group-hover:text-gold transition-colors" />
                       </div>
                       <div>
                         <div className="text-sm font-medium text-navy">Standort</div>
-                        <div className="text-sm text-warm-500">Hannover und Umgebung</div>
+                        <div className="text-sm text-warm-500">Lindemannallee 17, 30173 Hannover</div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
 

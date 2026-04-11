@@ -180,12 +180,17 @@ export default function UeberUnsPage() {
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <div className="gold-line mx-auto mb-6" />
-            <div className="flex items-center justify-center gap-2 text-gold/80 mb-4">
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Lindemannallee+17%2C+30173+Hannover"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 text-gold/80 hover:text-gold transition-colors mb-4"
+            >
               <MapPin className="h-5 w-5" />
               <span className="text-sm font-medium tracking-wide uppercase">
-                Hannover und Umgebung
+                Lindemannallee 17, 30173 Hannover
               </span>
-            </div>
+            </a>
             <h2 className="text-3xl lg:text-4xl font-bold text-white tracking-tight">
               Ihr lokaler Reinigungspartner
             </h2>
