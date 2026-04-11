@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Praxisreinigung Hannover | AvA Facility Service",
+  title: "Praxisreinigung Hannover | AvA Facility Services",
   description:
     "Hygienische Praxisreinigung in Hannover — nach RKI-Richtlinien mit Desinfektion aller Kontaktflächen. Geschultes Personal, festes Reinigungsteam, außerhalb Ihrer Sprechzeiten. Jetzt Angebot anfordern.",
 };

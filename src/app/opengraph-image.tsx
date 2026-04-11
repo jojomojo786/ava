@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const dynamic = "force-static";
-export const alt = "AvA Facility Service Hannover";
+export const alt = "AvA Facility Services Hannover";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -48,7 +48,7 @@ export default async function Image() {
             letterSpacing: "-0.02em",
           }}
         >
-          Facility Service
+          Facility Services
         </div>
         <div
           style={{

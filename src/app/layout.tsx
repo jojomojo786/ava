@@ -11,11 +11,11 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "AvA Facility Service in Hannover | Professionelle Gebäudereinigung",
+  title: "AvA Facility Services in Hannover | Professionelle Gebäudereinigung",
   description:
     "Zuverlässige und gründliche Reinigung für Privat- und Geschäftskunden in Hannover. Büroreinigung, Treppenhausreinigung, Praxisreinigung und mehr. Jetzt kostenloses Angebot anfordern.",
   keywords: [
-    "Facility Service Hannover",
+    "Facility Services Hannover",
     "Gebäudereinigung Hannover",
     "Büroreinigung Hannover",
     "Treppenhausreinigung Hannover",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "AvA Reinigung",
   ],
   openGraph: {
-    title: "AvA Facility Service in Hannover",
+    title: "AvA Facility Services in Hannover",
     description:
       "Zuverlässige und gründliche Reinigung für Privat- und Geschäftskunden. Flexibel, pünktlich und mit höchstem Anspruch an Qualität.",
     locale: "de_DE",

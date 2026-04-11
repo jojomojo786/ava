@@ -29,7 +29,7 @@ export function Footer() {
                 AvA
               </span>
               <span className="block text-[10px] font-medium tracking-[0.2em] text-gold uppercase">
-                Facility Service
+                Facility Services
               </span>
             </div>
             <div className="space-y-3 text-sm">
@@ -141,7 +141,7 @@ export function Footer() {
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-warm-500">
-          <span>&copy; {new Date().getFullYear()} AvA Facility Service Hannover</span>
+          <span>&copy; {new Date().getFullYear()} AvA Facility Services Hannover</span>
           <span>Alle Rechte vorbehalten.</span>
         </div>
       </div>

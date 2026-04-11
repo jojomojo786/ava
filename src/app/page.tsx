@@ -142,7 +142,7 @@ export default function HomePage() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white leading-[1.08] animate-fade-in-up stagger-1">
               <span className="text-gold">AvA</span>
               <br />
-              Facility Service
+              Facility Services
               <br />
               in Hannover
             </h1>
@@ -243,7 +243,7 @@ export default function HomePage() {
           <div className="text-center mb-14">
             <div className="gold-line mx-auto mb-4" />
             <h2 className="text-3xl lg:text-4xl font-bold text-navy tracking-tight">
-              Warum AvA Facility Service?
+              Warum AvA Facility Services?
             </h2>
           </div>
 
@@ -275,7 +275,7 @@ export default function HomePage() {
               Über Uns
             </h2>
             <p className="mt-6 text-lg text-warm-300 leading-relaxed">
-              AvA Facility Service steht für Qualität, Zuverlässigkeit und
+              AvA Facility Services steht für Qualität, Zuverlässigkeit und
               sorgfältige Arbeit. Unser Ziel ist es, unseren Kunden ein sauberes,
               gepflegtes und angenehmes Umfeld zu bieten — damit Sie sich auf das
               Wesentliche konzentrieren können.

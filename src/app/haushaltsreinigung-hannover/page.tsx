@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Haushaltsreinigung Hannover | AvA Facility Service",
+  title: "Haushaltsreinigung Hannover | AvA Facility Services",
   description:
     "Professionelle Haushaltsreinigung in Hannover — mehr Zeit für die schönen Dinge im Leben. Ohne Vertragsbindung, zum Wunschtermin, mit festem Reinigungsteam. Jetzt kostenloses Angebot anfordern.",
 };

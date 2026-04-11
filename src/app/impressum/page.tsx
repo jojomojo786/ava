@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Impressum | AvA Facility Service Hannover",
-  description: "Impressum gemäß § 5 TMG — AvA Facility Service Hannover.",
+  title: "Impressum | AvA Facility Services Hannover",
+  description: "Impressum gemäß § 5 TMG — AvA Facility Services Hannover.",
 };
 
 export default function ImpressumPage() {
@@ -22,7 +22,7 @@ export default function ImpressumPage() {
             <p>
               Ava AbdulRahman
               <br />
-              AvA Facility Service
+              AvA Facility Services
               <br />
               Lindemannallee 17
               <br />
@@ -59,7 +59,7 @@ export default function ImpressumPage() {
             <p>
               Ava AbdulRahman
               <br />
-              AvA Facility Service
+              AvA Facility Services
               <br />
               Lindemannallee 17
               <br />

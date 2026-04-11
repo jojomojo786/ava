@@ -83,7 +83,7 @@ function MobileMenu({
                 AvA
               </span>
               <span className="block text-[10px] font-medium tracking-[0.2em] text-warm-500 uppercase">
-                Facility Service
+                Facility Services
               </span>
             </div>
             <button
@@ -247,7 +247,7 @@ export function Navbar() {
                 <span className={`block text-[10px] font-medium tracking-[0.2em] uppercase -mt-0.5 transition-colors ${
                   isLight ? "text-warm-400" : "text-warm-500"
                 }`}>
-                  Facility Service
+                  Facility Services
                 </span>
               </div>
             </Link>

@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Grundreinigung Hannover | AvA Facility Service",
+  title: "Grundreinigung Hannover | AvA Facility Services",
   description:
     "Intensive Grundreinigung in Hannover — fasertief gründlich, kurzfristig verfügbar, ohne Vertragsbindung. Nach Renovierung, Umzug oder Frühjahrsputz. Ab €200 für 60m². Jetzt Angebot anfordern.",
 };
