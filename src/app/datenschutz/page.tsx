@@ -38,11 +38,13 @@ export default function DatenschutzPage() {
               Verantwortlich für die Datenverarbeitung auf dieser Website:
             </p>
             <p className="mt-2">
-              <span className="bg-gold/10 text-warm-600 px-1 rounded text-xs">wird ergänzt</span>
+              Ava AbdulRahman
               <br />
               AvA Facility Services
               <br />
-              Hannover
+              Lindemannallee 17
+              <br />
+              30173 Hannover
               <br />
               <br />
               Telefon: 0176 638 184 41
